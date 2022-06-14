@@ -1,0 +1,103 @@
+.profile-container,
+.create-container {
+  margin: auto;
+  padding: 50px;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px #b7b7b7;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 900;
+  color: rgb(54, 104, 4);
+  max-width: 700px;
+  position: relative;
+}
+
+.create-container {
+  margin-top: 5em;
+}
+
+.profile-container,
+.form-input,
+.form-button,
+#button {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.form--hidden {
+  display: none;
+}
+.form-title {
+  text-align: center;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.form-message-error {
+  color: rgb(166, 32, 32);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #dddddd;
+  background-color: #eeeeee;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.form-input:focus {
+  border-color: rgb(54, 104, 4);
+  background: white;
+}
+
+#create-button,
+#login-button,
+#logout-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: Bold;
+  background-color: rgb(95, 167, 23);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+#button:hover {
+  background: rgb(70, 122, 17);
+}
+
+#button:active {
+  transform: scale(0.98);
+}
+
+.form-text {
+  text-align: center;
+}
+.form-link {
+  color: rgb(70, 122, 17);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}

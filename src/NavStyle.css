@@ -1,0 +1,27 @@
+.navbar {
+  font-family: sans-serif;
+  padding: 1px;
+  background-color: rgb(43, 32, 32);
+}
+
+.menu-item {
+  display: inline-block;
+  width: 150px;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: white;
+}
+
+#home-link {
+  float: left;
+}
+#library-link,
+#profile-link {
+  float: right;
+}
+
+#profile-image {
+  width: 50px;
+}
