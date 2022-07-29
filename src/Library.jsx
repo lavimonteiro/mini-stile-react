@@ -1,6 +1,6 @@
 import React from "react";
-import { LessonCards } from "./components/Library-react";
-import "./Library.css";
+import { LessonCards } from "./Library-react";
+import "./css/Library.css";
 
 function Library() {
   return (

@@ -36,13 +36,19 @@ body {
   -webkit-text-stroke: 2px rgb(54, 104, 4);
 }
 
+.homepage {
+  display: flex;
+}
+
 .background-img {
-  background-image: url("images/homepage.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 60vh;
-  height: 100vh;
-  float: left;
+  width: 70vh;
+  height: 100%vh;
+  object-fit: cover;
+}
+
+.welcome-text {
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 #welcome {

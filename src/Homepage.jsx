@@ -1,5 +1,7 @@
 import React from "react";
-import "./Homepage.css";
+import "./css/Homepage.css";
+import "./css/Homepage.css";
+import homepagePng from "./images/homepage.png";
 
 function Homepage() {
   return (
@@ -12,20 +14,22 @@ function Homepage() {
         />
         <div className="center-text">Stile</div>
       </div>
-      <div className="background-img"></div>
-      <div className="welcome-text">
-        <p id="welcome">Welcome to Mini Stile!</p>
-        <br />
-        <br />
-        <div className="text">
-          <p>The buggier but cooler,</p>
-          <p>somewhat functional version of Stile</p>
+      <div className="homepage">
+        <img src={homepagePng} alt={"homepage"} className="background-img" />
+        <div className="welcome-text">
+          <p id="welcome">Welcome to Mini Stile! </p>
           <br />
           <br />
-          <br />
-          <p>Made by Stile's best Employees</p>
-          <br />
-          <br />
+          <div className="text">
+            <p>The buggier but cooler,</p>
+            <p>somewhat functional version of Stile</p>
+            <br />
+            <br />
+            <br />
+            <p>Made by Stile's best Employees</p>
+            <br />
+            <br />
+          </div>
         </div>
       </div>
     </>

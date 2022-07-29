@@ -1,8 +1,16 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import "./NavStyle.css";
+import "./css/NavStyle.css";
 
 function App() {
+  let profile;
+
+  if (sessionStorage.length > 0) {
+    profile = sessionStorage.getItem("access-token");
+  } else {
+    profile = "Profile";
+  }
+
   return (
     <>
       <header>
@@ -17,7 +25,7 @@ function App() {
               </li>
               <li id="profile-link" className="menu-item">
                 <Link id="profile" className="navLinks" to="/profile">
-                  Profile
+                  {profile}
                 </Link>
               </li>
               <li id="library-link" className="menu-item">

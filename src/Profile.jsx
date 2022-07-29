@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import "./Login.css";
+import "./css/Login.css";
 
 function storingCreateAccountDetails(event, data) {
   event.preventDefault();
@@ -10,7 +10,7 @@ function storingCreateAccountDetails(event, data) {
   let password = data.password;
   let confirmPassword = data.confirmPassword;
 
-  console.log(username, password, email, confirmPassword);
+  // console.log(username, password, email, confirmPassword);
 
   if (password === confirmPassword) {
     fetch("/api/v1/user", {
@@ -37,6 +37,7 @@ function storingCreateAccountDetails(event, data) {
     messageElement.textContent = "Password does not match. Please Try again.";
   }
 }
+console.log("YOU'RE REALLY READING THIS? WOW, commitment!!");
 
 function login(event, data) {
   event.preventDefault();
@@ -150,7 +151,6 @@ export class LoginForm extends React.Component {
     );
   }
 }
-
 export class CreateAccountForm extends React.Component {
   constructor(props) {
     super(props);
@@ -242,7 +242,6 @@ export class CreateAccountForm extends React.Component {
     );
   }
 }
-
 export class LoggedInForm extends React.Component {
   render() {
     return (
@@ -266,7 +265,6 @@ export class LoggedInForm extends React.Component {
     );
   }
 }
-
 export class Profile extends React.Component {
   render() {
     console.log(sessionStorage);
